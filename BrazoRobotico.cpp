@@ -1,32 +1,38 @@
 #include <iostream>
+#include "BrazoRobotico.h"
 using namespace std;
 
-BrazoRobotico::BrazoRobotico(double x, double y, double  z, double sujetando){
+BrazoRobotico::BrazoRobotico(double x, double y, double  z, bool  sujetando){
    this-> x = x;
    this-> y = y;
    this-> z = z;
    this-> sujetando = sujetando;
 }
-BrazoRobotico::double getX{
+double BrazoRobotico::getX(){
    return x;
 }	
-double getY{
+double BrazoRobotico::getY(){
    return y;
 }
-double getZ{
+double BrazoRobotico::getZ(){
    return z;
 }
-bool getSujetando{
+bool BrazoRobotico::getSujetando(){
    return sujetando;
 }
-void coger(){
+void BrazoRobotico::coger(){
    sujetando = true;
+   cout << "Objeto cogido\n";
 }
-void soltar(){
+void BrazoRobotico::soltar(){
    sujetando = false;
+   cout << "Objeto soltado\n";
 }
-void mover(double xx, double yy, double zz);
+void BrazoRobotico::mover(double xx, double yy, double zz){
+   cout << "Movido de " <<  x << "," << y << "," << z << " a " << xx << "," << yy <<  "," << zz << "\n";
    x = xx;
    y = yy;
    z = zz; 
+
+
 }
