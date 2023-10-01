@@ -29,7 +29,7 @@ void BrazoRobotico::soltar(){
    cout << "Objeto soltado\n";
 }
 void BrazoRobotico::mover(double xx, double yy, double zz){
-   cout << "Movido de " <<  x << "," << y << "," << z << " a " << xx << "," << yy <<  "," << zz << "\n";
+   cout << "Movido de " <<  x << ", " << y << ", " << z << " a " << xx << ", " << yy <<  ", " << zz << "\n";
    x = xx;
    y = yy;
    z = zz; 
